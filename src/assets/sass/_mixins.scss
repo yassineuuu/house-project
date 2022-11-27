@@ -12,6 +12,7 @@
 @mixin landing-button($fontSize, $bgHoverColor, $hoverColor) {
     font-size: $fontSize; 
     padding: 4px 16px;
+	min-width: 120px;
     @include transition();
     &:hover{
         background-color: $bgHoverColor;

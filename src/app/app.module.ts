@@ -37,12 +37,22 @@ import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { BannerComponent } from './banner/banner.component';
+import { AboutSectionComponent } from './about-section/about-section.component';
+import { ServicesSectionComponent } from './services-section/services-section.component';
+import { GalerySectionComponent } from './galery-section/galery-section.component';
+import { AppFooterComponent } from './app-footer/app-footer.component';
+import { TestimonialSectionComponent } from './testimonial-section/testimonial-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppHeaderComponent,
-    BannerComponent
+    BannerComponent,
+    AboutSectionComponent,
+    ServicesSectionComponent,
+    GalerySectionComponent,
+    AppFooterComponent,
+    TestimonialSectionComponent
   ],
   imports: [
     BrowserModule,

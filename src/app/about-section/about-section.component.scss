@@ -1,0 +1,54 @@
+@import "../../assets/sass/variables.scss";
+@import "../../assets/sass/mixins";
+
+.about{
+    background-color: $color3;
+    display: flex;
+    margin: 4rem 6%;
+    padding: 4rem;
+    align-items: center;
+    .cell-right{
+        width: 50%;
+        padding: 1rem 2rem;
+        .title{
+            width: 100%;
+            h2{
+                font-size: $fontSize-l2;
+                width: fit-content;
+                margin: 2rem auto 4rem;
+            }
+        }
+        .about-text{
+            p{
+                -webkit-line-clamp: 5;
+                position: relative;
+                line-height: $fontSize-s;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                height: 120px;
+                font-size: $fontSize-xs;
+                margin: 2rem auto 4rem;
+                
+            }
+        }
+        .about-action{
+            width: fit-content;
+            margin: 2rem auto;
+            a{
+                @include landing-button($fontSize-xs2, $color1, $white);
+            }
+        }
+
+    }
+    .cell-left{
+        width: 50%;
+        padding: 1rem 2rem;
+        .about-img{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
