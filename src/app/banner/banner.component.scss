@@ -1,4 +1,5 @@
 @import "../../assets/sass/variables.scss";
+@import "../../assets/sass/mixins";
 
 .banner{
     .banner-img{    
@@ -15,6 +16,7 @@
         }
     }
     .slogan{
+        animation: fadeIn 0.8s ease-in both;
         width: 40%;
         position: relative;
         top: 16rem;
@@ -22,27 +24,26 @@
         background-color: #ffffffb3;
         padding: 1rem 2rem;
         border-radius: $borderRadius;
+        
         h1.banner-title{
-            font-family: 'PlayfairDisplay-Italic';
+            font-family: $fontPrincipal;
             font-size: $fontSize-xl;
             line-height: $fontSize-xl;
             color: $color1;
+            animation: fadeIn-right 0.8s 1s ease-in both;
         }
         p.banner-subtitle{
             font-size: $fontSize-s;
             line-height: $fontSize-m;
+            animation: fadeIn-right 0.8s 1.8s ease-in both;
         }
         .actions{
             width: fit-content;
             margin: 2rem auto 1rem;
+            animation: fadeIn-up 0.8s 2.8s ease-in both;
             a{
-                font-size: $fontSize-xs; 
-                padding: 4px 16px;
                 margin-right: 1rem;
-                -webkit-transition: all 0.3s ease-in-out;
-                -moz-transition: all 0.3s ease-in-out;
-                -o-transition: all 0.3s ease-in-out;
-                transition: all 0.3s ease-in-out;
+                
                 &.btn-sign{
                     background-color: $color3;
                     color: $white;
@@ -50,10 +51,7 @@
                 &.btn-contact{
                     color: $color3;
                 }
-                &:hover{
-                    background-color: $color1;
-                    color: $white;
-                }
+                @include landing-button($fontSize-xs, $color1, $white);
             }
         }
     }

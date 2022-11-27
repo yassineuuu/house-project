@@ -1,0 +1,88 @@
+
+// Transition
+@mixin transition {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+// Buttons Mixins
+
+@mixin landing-button($fontSize, $bgHoverColor, $hoverColor) {
+    font-size: $fontSize; 
+    padding: 4px 16px;
+    @include transition();
+    &:hover{
+        background-color: $bgHoverColor;
+        color: $hoverColor;
+    }
+    
+}
+
+
+/*=============================== Animations ===============================*/
+
+// Fade in Animations
+@keyframes fadeIn {
+    from {
+		opacity: 0;
+        
+	}
+	to {
+		opacity: 1;        
+	}
+    
+}
+@keyframes fadeIn-down {
+    from {
+		opacity: 0;
+		transform: translateY(-20%);
+        
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+        
+	}
+    
+}
+@keyframes fadeIn-up {
+    from {
+		opacity: 0;
+		transform: translateY(20%);
+        
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+        
+	}
+    
+}
+@keyframes fadeIn-right {
+    from {
+		opacity: 0;
+		transform: translateX(-20%);
+        
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+        
+	}
+    
+}
+@keyframes fadeIn-left {
+    from {
+		opacity: 0;
+		transform: translateX(20%);
+        
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+        
+	}
+    
+}
