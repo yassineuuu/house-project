@@ -1,0 +1,55 @@
+@import "../../assets/sass/variables.scss";
+
+header{
+    display: flex;
+    justify-content: space-between;
+    max-height: 160px;
+    padding: 0 6rem;
+    align-items: center;
+
+    .logo{
+        img{
+            width: 200px;
+            height: auto;
+        }
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        .navbar{
+            ul{
+                display: flex;
+                li{
+                    padding: 1rem 2rem;
+                    list-style: none;
+                    a{
+                        color: $color2;
+                        text-decoration: none;
+                        font-size: $fontSize-xs;
+                        font-family: 'Hammersmith';
+                        text-transform: uppercase;
+                        -webkit-transition: all 0.3s ease-in-out;
+                        -moz-transition: all 0.3s ease-in-out;
+                        -o-transition: all 0.3s ease-in-out;
+                        transition: all 0.3s ease-in-out;
+                        &:hover{
+                            color: $color4;
+                        }
+                    }
+                }
+            }
+            
+        }
+        .user-ico{
+            a{
+                color: $color4;
+                .mat-icon{
+                    font-size: $fontSize-l;
+                }
+            }
+        }
+    }
+}
+

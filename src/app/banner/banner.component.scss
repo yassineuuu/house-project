@@ -1,0 +1,61 @@
+@import "../../assets/sass/variables.scss";
+
+.banner{
+    .banner-img{    
+        position: absolute;
+        right: 4rem;
+        z-index: -1;
+        height: 80vh;
+        overflow: hidden;
+        border-radius: $borderRadius;
+        img{
+            border-radius: $borderRadius;
+            width: 60vw;
+            height: fit-content;
+        }
+    }
+    .slogan{
+        width: 40%;
+        position: relative;
+        top: 16rem;
+        left: 6rem;
+        background-color: #ffffffb3;
+        padding: 1rem 2rem;
+        border-radius: $borderRadius;
+        h1.banner-title{
+            font-family: 'PlayfairDisplay-Italic';
+            font-size: $fontSize-xl;
+            line-height: $fontSize-xl;
+            color: $color1;
+        }
+        p.banner-subtitle{
+            font-size: $fontSize-s;
+            line-height: $fontSize-m;
+        }
+        .actions{
+            width: fit-content;
+            margin: 2rem auto 1rem;
+            a{
+                font-size: $fontSize-xs; 
+                padding: 4px 16px;
+                margin-right: 1rem;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                &.btn-sign{
+                    background-color: $color3;
+                    color: $white;
+                }
+                &.btn-contact{
+                    color: $color3;
+                }
+                &:hover{
+                    background-color: $color1;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+}
